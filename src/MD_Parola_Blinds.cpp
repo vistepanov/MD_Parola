@@ -27,6 +27,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  * \brief Implements blinds effect
  */
 
+#if ENA_MISC
 const uint8_t BLINDS_SIZE = 4; ///< The width of the blinds in pixels
 
 void MD_PZone::effectBlinds(bool bIn)
@@ -86,3 +87,4 @@ void MD_PZone::effectBlinds(bool bIn)
     _fsmState = (bIn ? PAUSE : END);
   }
 }
+#endif
